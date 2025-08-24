@@ -1,0 +1,168 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/eo/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
+  ],
+  "id": "fl_m_2808138_sw_17_030_20230112_20230511",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -81.310241,
+          28.373183
+        ],
+        [
+          -81.310434,
+          28.439475
+        ],
+        [
+          -81.377283,
+          28.439306
+        ],
+        [
+          -81.377048,
+          28.373015
+        ],
+        [
+          -81.310241,
+          28.373183
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -81.377283,
+    28.373015,
+    -81.310241,
+    28.439475
+  ],
+  "properties": {
+    "gsd": 0.3,
+    "datetime": "2023-01-12T16:00:00Z",
+    "naip:year": "2023",
+    "proj:bbox": [
+      463056.0,
+      3138582.0,
+      469602.0,
+      3145926.0
+    ],
+    "providers": [
+      {
+        "url": "https://www.fsa.usda.gov/programs-and-services/aerial-photography/imagery-programs/naip-imagery/",
+        "name": "USDA Farm Service Agency",
+        "roles": [
+          "producer",
+          "licensor"
+        ]
+      }
+    ],
+    "naip:state": "fl",
+    "proj:shape": [
+      24480,
+      21820
+    ],
+    "proj:centroid": {
+      "lat": 28.40625,
+      "lon": -81.34375
+    },
+    "proj:transform": [
+      0.3,
+      0.0,
+      463056.0,
+      0.0,
+      -0.3,
+      3145926.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "proj:code": "EPSG:26917"
+  },
+  "links": [
+    {
+      "rel": "collection",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/naip",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/naip",
+      "type": "application/json"
+    },
+    {
+      "rel": "root",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1",
+      "type": "application/json",
+      "title": "Microsoft Planetary Computer STAC API"
+    },
+    {
+      "rel": "self",
+      "href": "https://planetarycomputer.microsoft.com/api/stac/v1/collections/naip/items/fl_m_2808138_sw_17_030_20230112_20230511",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "preview",
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/map?collection=naip&item=fl_m_2808138_sw_17_030_20230112_20230511",
+      "type": "text/html",
+      "title": "Map of item"
+    }
+  ],
+  "assets": {
+    "image": {
+      "href": "https://naipeuwest.blob.core.windows.net/naip/v002/fl/2023/fl_030cm_2023/28081/m_2808138_sw_17_030_20230112_20230511.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+      "title": "RGBIR COG tile",
+      "eo:bands": [
+        {
+          "name": "Red",
+          "common_name": "red"
+        },
+        {
+          "name": "Green",
+          "common_name": "green"
+        },
+        {
+          "name": "Blue",
+          "common_name": "blue"
+        },
+        {
+          "name": "NIR",
+          "common_name": "nir",
+          "description": "near-infrared"
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "thumbnail": {
+      "href": "https://naipeuwest.blob.core.windows.net/naip/v002/fl/2023/fl_030cm_2023/28081/m_2808138_sw_17_030_20230112_20230511.200.jpg",
+      "type": "image/jpeg",
+      "title": "Thumbnail",
+      "roles": [
+        "thumbnail"
+      ]
+    },
+    "tilejson": {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/tilejson.json?collection=naip&item=fl_m_2808138_sw_17_030_20230112_20230511&assets=image&asset_bidx=image%7C1%2C2%2C3&format=png",
+      "type": "application/json",
+      "title": "TileJSON with default rendering",
+      "roles": [
+        "tiles"
+      ]
+    },
+    "rendered_preview": {
+      "href": "https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=naip&item=fl_m_2808138_sw_17_030_20230112_20230511&assets=image&asset_bidx=image%7C1%2C2%2C3&format=png",
+      "type": "image/png",
+      "title": "Rendered preview",
+      "rel": "preview",
+      "roles": [
+        "overview"
+      ]
+    }
+  },
+  "collection": "naip"
+}

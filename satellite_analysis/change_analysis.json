@@ -1,0 +1,117 @@
+{
+  "analysis_metadata": {
+    "location": "Orlando Airport Development Imagery",
+    "bbox": [
+      -81.4,
+      28.41,
+      -81.27,
+      28.47
+    ],
+    "years_compared": [
+      2010,
+      2023
+    ],
+    "collection": "naip",
+    "analysis_timestamp": "2025-08-12T20:42:33.951391",
+    "image_resolution": "512x512",
+    "processing_optimizations": "Applied aggressive scaling (10%) and windowed reading for faster processing"
+  },
+  "change_detection_results": {
+    "threshold_20": {
+      "changed_pixels": 170685,
+      "total_pixels": 262144,
+      "change_percentage": 65.11116027832031
+    },
+    "threshold_40": {
+      "changed_pixels": 86761,
+      "total_pixels": 262144,
+      "change_percentage": 33.09669494628906
+    },
+    "threshold_60": {
+      "changed_pixels": 44584,
+      "total_pixels": 262144,
+      "change_percentage": 17.0074462890625
+    },
+    "color_analysis": {
+      "red": {
+        "mean_change": 43.51509475708008,
+        "max_change": 219.0,
+        "std_change": 30.255477804645082,
+        "significant_change_pixels": 160742
+      },
+      "green": {
+        "mean_change": 33.00572967529297,
+        "max_change": 206.0,
+        "std_change": 26.752743688612107,
+        "significant_change_pixels": 112302
+      },
+      "blue": {
+        "mean_change": 30.704139709472656,
+        "max_change": 191.0,
+        "std_change": 26.824202229889934,
+        "significant_change_pixels": 103106
+      }
+    },
+    "statistics": {
+      "overall": {
+        "mean_difference": 35.74165471394857,
+        "std_difference": 44.63452520911367,
+        "correlation": 0.34797910931285997
+      },
+      "red": {
+        "mean_img1": 119.23062133789062,
+        "mean_img2": 143.75697708129883,
+        "std_img1": 42.19122033818375,
+        "std_img2": 41.24610229290563,
+        "correlation": 0.3660233371473759
+      },
+      "green": {
+        "mean_img1": 135.37965774536133,
+        "mean_img2": 145.4480857849121,
+        "std_img1": 36.21196248438165,
+        "std_img2": 37.83763235650339,
+        "correlation": 0.3792502652377155
+      },
+      "blue": {
+        "mean_img1": 133.72630310058594,
+        "mean_img2": 129.11173248291016,
+        "std_img1": 33.25960618812239,
+        "std_img2": 38.86828100669927,
+        "correlation": 0.3774750164730515
+      }
+    }
+  },
+  "key_findings": {
+    "change_magnitude": "HIGH",
+    "dominant_change_channel": "red",
+    "change_significance": "HIGHLY_SIGNIFICANT"
+  },
+  "files_generated": {
+    "original_images": [
+      "2010_image.jpg",
+      "2023_image.jpg"
+    ],
+    "standardized_images": [
+      "2010_standardized.jpg",
+      "2023_standardized.jpg"
+    ],
+    "change_visualizations": [
+      "change_overlay.jpg",
+      "diff_threshold_20.jpg",
+      "diff_threshold_40.jpg",
+      "diff_threshold_60.jpg"
+    ],
+    "metadata": [
+      "2010_metadata.json",
+      "2023_metadata.json"
+    ],
+    "analysis_report": "change_analysis.json"
+  },
+  "suggested_analysis_areas": [
+    "Urban development patterns",
+    "Infrastructure changes",
+    "Land use modifications",
+    "Environmental changes",
+    "Transportation network evolution"
+  ]
+}
